@@ -1,0 +1,32 @@
+<!DOCTYPE html>   <!-- Informa que este é um documento html5 -->
+
+<html lang="pt-br"> <!-- Abre o documento e informa que a lingua usada é pt-br -->
+
+	<head>  
+		<meta charset="UTF-8">  <!-- Indica a codificação do texto, para que os caracteres sejam imprimidos corretamente. -->
+		<title>Site HTML</title> <!-- É o título que irá aparecer na aba/guia do site -->
+		<link rel="shortcut icon" href="favicon.png"> <!-- Define o favicon da página -->
+		<link rel="stylesheet" href="style.css"> <!-- 'Chama' um outro documento, organizando o trabalho e economizando várias linhas de código -->
+	</head>
+	
+	<body>
+		<h1 align="left"> Título </h1> <!-- Imprime um título de hierarquia 1 --> 
+		<!-- A seguir foi criado um parágrafo com vários exemplos de formatação: -->
+		<p class="format">Parágrafo 1: &nbsp; <span style="font-family:verdana;font-size:15px;color:black;font-style:normal;"> linha 1 </span>  <span style="font-weight:bold;"> Em negrito, </span> <span style="font-style:italic"> Em itálico, </span> <span style="color:red;"> Em vermelho, </span> <span style="font-family:Times New Roman;"> Em "Times New Roman" </span> etc
+			<br> <span style="font-style:italic;"> linha 2, em itálico, apenas.</span>
+		</p>
+		<!-- Note que também foi determinada uma classe para este parágrafo ("format"), pois assim tudo que for definido para a classe, também é para o texto, economizando linhas de código -->
+		<p class="format"> Parágrafo 2: A seguir, duas imagens: </p>
+			<figure class="foto-legenda" style="width:400px"> <!-- Abre uma tag de imagens e cria uma classe para ela. -->
+				<img src="Imagem.jpg" width="400" weight="200"> <!-- Adiciona uma imagem. -->
+				<figcaption> Imagem 1: Descrição aqui </figcaption> <!-- Adiciona uma legenda para a imagem --> 
+			</figure>
+			<figure class="foto-legenda" style="width:250px">
+				<img src="Imagem achatada.jpg" width="250" weight="250">
+				<figcaption> Imagem 2: Descrição aqui </figcaption>
+			</figure>
+		<address> <h4> Construído por: <a href="https://www.facebook.com/profile.php?id=100005153320787" target="_blank">Eduardo Castro </h4></a>	
+		
+	</body>
+
+</html>  <!-- Fecha o documento -->
