@@ -1,0 +1,242 @@
+ @charset "UTF-8";
+
+ header {
+	border: 3px solid black;
+}	
+#logo{
+	display:block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+body {
+    height:100%;
+	background-color: #140718;
+	/*border: 3px solid black;*/
+}
+div {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+p{
+	margin-top: 20px;
+	color: violet;
+	font-size: 12pt;
+	font-weight: bolder;	
+}
+div.controlsplayer {	
+	bottom: 45px;
+	margin-left: 5px;
+	margin-bottom: 12px;
+	background-color: #140718;
+	position: fixed;
+	height: 20px;
+	width: 140px;
+	}
+button{
+	color: grey;
+	background-color: #140718;
+	border: 1px solid grey;
+	height: 25px;
+	width: 25px;
+	margin-right: 3px;
+	box-shadow: 0.1px 0.1px 0.1px white;
+}
+div.progress {
+  position: fixed;
+  bottom: 30px; 
+  left: 0px;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  background: #140718;
+  height: 12px;
+  width: 99%;	
+  border: 1px solid grey;
+  border-radius: 5px; 	
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; 
+}
+div.progresso { /*143.096#483D8B;#220A29;(cores)
+  animation: loading 10s ease;*/
+  background:#2A0A29;
+  content: '';
+  left: 0; top: 0; bottom: 0;
+  border: 1px solid grey;
+  border-radius: 5px; 			
+  -webkit-border-radius: 5px; 
+  -moz-border-radius: 5px;
+  height:12px;
+  width: 100%;
+  position: relative;
+ margin-top: -1px;
+ margin-left: 0px;
+}
+@keyframes loading {
+  from { width: 0 }
+  to { width: 100% }
+  
+}
+address {
+	background-color: #220A29;
+	margin-left: -10px;
+	margin-right: 5px;
+	color: purple;
+	position: fixed;
+    bottom:0px;
+    height:30px;
+	width: 99.9%;
+	border: 1px solid black;
+	margin-bottom: 0px;
+}
+audio {display:none;}
+address h4{
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+ul#album {
+	padding-top: 50px;
+	overflow: hidden;
+	list-style: none;
+	clear: middle;
+}
+ul#album li {
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 8px;
+	border: 5px solid black;
+	background-color: grey;
+	background: url("imagens/yanntiersen.jpg") no-repeat;
+}
+ul#album li a{
+	display: block;
+	opacity:0.5;
+	color: white;
+	text-shadow: 1px 1px 1px #000000;
+	font-size: 12pt;
+	line-height: 360px;
+	padding: 5px;
+	margin-left: 5px;
+	font-weight: bolder;
+	/*background-color: rgba(0,0,0,0.5);*/
+}
+ul#album li:hover a{
+	opacity:1;
+	transition: opacity 2s;
+}
+ul#album li:hover {
+	-webkit-transition: all .4s ease-in;  
+	-moz-transition: all .4s ease-in; 
+	-ms-transition: all .4s ease-in; 
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+}	
+ul#album li#m1 {
+	background: url("imagens/yanntiersen.jpg") no-repeat;
+	background-size: 200px 200px;
+	background-position: 50% 50%;
+	background-color: #220A29;
+}
+
+ul#album li#m2 {
+	background: url("imagens/whenwewereyoung.jpg") no-repeat;
+	background-size: 200px 200px;
+	background-position: 50% 50%;
+	background-color: #220A29;
+}
+
+ul#album li#m3 {
+	background: url("imagens/despacito.jpg") no-repeat;
+	background-size: 200px 200px;
+	background-position: 50% 50%;
+	background-color: #220A29;
+}
+
+ul#album li#m4 {
+	background: url("imagens/zombie.jpg") no-repeat;
+	background-size: 200px 200px;
+	background-position: 50% 50%;
+	background-color: #220A29;
+}
+
+ul#album li#m5 {
+	background: url("imagens/fairytail.jpg") no-repeat;
+	background-size: 200px 200px;
+	background-position: 50% 50%;
+	background-color: #220A29;
+}
+
+ul#album li#m6 {
+	background: url("imagens/healtheworld.jpg") no-repeat;
+	background-size: 200px 200px;
+	background-position: 50% 50%;
+	background-color: #220A29;
+}
+
+ul#album li#m7 {
+	background: url("imagens/levanpolkka.jpg") no-repeat;
+	background-size: 200px 200px;
+	background-position: 50% 50%;
+	background-color: #220A29;
+}
+ul#album li#m8 {
+	background: url("imagens/got.jpg") no-repeat;
+	background-size: 200px 200px;
+	background-position: 50% 50%;
+	background-color: #220A29;
+}
+
+ul#album li#m9 {
+	background: url("imagens/qacp.jpg") no-repeat;
+	background-size: 200px 200px;
+	background-position: 50% 50%;
+	background-color: #220A29;
+}
+
+ul#album li#m10 {
+	background: url("imagens/vivalavida.jpg") no-repeat;
+	background-size: 200px 200px;
+	background-position: 50% 50%;
+	background-color: #220A29;
+}
+	
+/* ignorar código a seguir */	
+h1 {
+	text-align: center;
+	font-size: 5em;
+	color: #4B088A;
+	font-weight: bolder;
+	text-shadow: 1px 0px 0px grey, 
+                 -1px 0px 0px grey, 
+                 0px 1px 0px grey, 
+                 0px -1px 0px grey;
+	
+}
+
+
+/* Formatação de imagens com legendas */
+
+figure.foto-legenda {
+	position: relative;
+	box-shadow: 1px 1px 4px black;
+}
+figure.foto-legenda img {
+}
+figure.foto-legenda figcaption {
+	opacity:0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption {
+	opacity: 1;	
+}

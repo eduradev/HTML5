@@ -1,0 +1,42 @@
+<!DOCTYPE html>   <!-- Informa que este é um documento html5 -->
+
+<html lang="pt-br"> <!-- Abre o documento e informa que a lingua usada é pt-br -->
+
+<head>  
+		<meta charset="UTF-8">  <!-- Indica a codificação do texto, para que os caracteres sejam imprimidos corretamente. -->
+		<title>Sound&Text Trips</title> <!-- É o título que irá aparecer na aba/guia do site -->
+		<link rel="shortcut icon" href="imagens/player.png"> <!-- Define o favicon da página -->
+		<link rel="stylesheet" href="style.css"> <!-- 'Chama' um outro documento, organizando o trabalho e economizando várias linhas de código -->
+<script>window.onload = function() {var context = new AudioContext();} </script>
+
+<script data-ad-client="ca-pub-2194062383593669" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head>
+	
+<body>
+	<header>
+		<a href=index.html><img id="logo" src="imagens/proplogo4.png" width="510"; height="180" alt="Sound&Text Trips"/> </a>
+	</header>
+			<div class="progress"><div class="progresso"></div></div>
+	<footer>
+		<address> <h4> Construído por: <a href="https://www.facebook.com/profile.php?id=100005153320787" target="_blank">Eduardo Castro </h4></a>
+		<div class="controlsplayer">
+			<button onclick="javascript: document.getElementById('player').play()">►</button>
+			<!--<button onclick="javascript: document.getElementById('player').pause()">▌▌</button> -->
+			<button onclick="javascript: document.getElementById('player').volume += 0.1">+</button>
+			<button onclick="javascript: document.getElementById('player').volume -= 0.1">-</button>
+		</div>
+		<iframe src="musicas/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+		<audio id="player" controls autoplay> <source src="musicas/WWWY.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>	
+		<script >
+			var som1 = document.getElementById("player");
+			som1.onloadeddata = function() {
+			console.log("player.duration=" + player.duration + "s");;
+			var tempo = player.duration;
+			console.log("tempo=" + tempo + "s");
+			var elemento = document.querySelector("div.progresso").style.animation = "loading " + tempo + "s ease"}
+		</script>
+	</footer>
+	</body>
+
+</html>  <!-- Fecha o documento -->
