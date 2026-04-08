@@ -1,0 +1,459 @@
+ @charset "UTF-8";
+
+  
+
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: -;
+	background-image: url("_imagens/Fundo do site.jpg");
+
+	color: -;
+}
+
+div.cabeçalho {
+	width: 100%;
+	left: -1px;
+	top: -2px;
+	background-image: url("_imagens/menu.png");
+	height: 130px;
+	position: fixed;
+	z-index: 99;
+}
+
+div.logo {
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	overflow: hidden;
+	height: 120px;
+	width: 120px;
+	background-color: yellow;
+	margin-top: -45px;
+}
+
+div.corpo{
+	width: 100%;
+	top: 50px;
+	left: -1px;
+	height: 100%;
+}
+
+div.open{
+	margin-top: 72px;
+	width: 100%;
+	padding-top: 55%;
+	position: relative;
+}
+
+iframe.open{
+	width: 100%;
+	height: 100%;
+	max-height: 565px;
+	position: absolute;
+	top: 0;
+}
+
+div.banda {
+	width: 100%;
+	height: 1000px;
+	left: -1px;
+	z-index: 98;
+}
+
+div.agenda {
+	width: 100%;
+	height: 1000px;
+	left: -1px;
+}
+
+div.contato {
+	width: 100%;
+	height: 1000px;
+	left: -1px;
+}
+
+
+h1 {
+	color: white;
+	text-align: center;
+	position: relative;
+	text-transform: uppercase;
+	text-decoration: underline;
+	
+}
+
+/* ul li.nav-item:nth-child(2){
+  margin-right: 250px;
+} */
+
+ul.nav1 {
+	position: relative;
+	top: 40px;
+	margin-left: 100px;	
+}
+
+ul.nav2 {
+	position: relative;
+	top: -90px;
+	float: right;
+	margin-left: 300px;
+}
+
+ul li.nav-item{
+	color: white;
+	display: inline;	
+	font-style: bolder;
+	color: white;
+	margin: 100px 100px 0 0;
+}
+
+ul li.nav-item a{
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bolder;
+	color: white;
+	text-transform: uppercase;
+}
+
+ul li.nav-item a:hover{ 
+-moz-box-shadow:0 3px 10px 0 #CCC; 
+text-shadow:0px 0px 5px #fff;
+}
+
+div.logo img:hover{ 
+	-moz-box-shadow: 1px 10px 10px 10px white; 
+	border-radius: 50%;
+	right: 3px;
+	border: 1px solid white;
+}
+
+
+p.format {
+	text-align: justify;
+	text-indent: 50px;
+}
+
+/* Formatação links */
+
+div.link{
+	margin-top: 50px;
+	background-color: rgba(155,155,155,0.7);
+	border: 4px solid black;
+	padding: 10px;
+	display: table;
+	min-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+address{
+	text-align: center;
+	line-height: 50px;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+address a{
+	color: white;
+}
+
+address a.whats{
+	font-size: 25px;
+}
+
+div.emaillink{
+	height: 50px;
+	margin-top: -55px;
+	margin-left: 55px;
+}
+
+/* Formatação Clipes */
+
+div.clipes {
+	width: 100%;
+	min-height: 1000px;
+	left: -1px;
+}
+
+ul#clipes {
+	margin-top: -30px;
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 50px;
+	overflow: hidden;
+	list-style: none;
+}
+
+ul#clipes li {
+	float: left;
+	width: 320px;
+	height: 180px;
+	margin: 10px;
+	border: 4px solid black;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+ul#clipes li span {
+	opacity:0.3;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	background-color: rgba(0,0,0,0.4);
+	font-size: 20pt;
+	line-height: 360px;
+	padding: 5px;
+	margin-left: 5px;
+	position: relative;
+	bottom: 30px;
+	margin-top: 30px;
+}
+
+ul#clipes li:hover span {
+	opacity:1;
+	transition: opacity 2s;
+}
+
+ul#clipes li:hover {
+	-webkit-transition: all .4s ease-in;  
+	-moz-transition: all .4s ease-in; 
+	-ms-transition: all .4s ease-in; 
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+}
+
+
+ul#clipes li#clipe01 {
+	background: url('_imagens/clipes/sonhosdeoutdoor.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 320px 180px;
+	background-color: #ffffff;
+}
+
+ul#clipes li#clipe02 {
+	background: url('_imagens/clipes/acordeicomosol.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 320px 180px;
+	background-color: #ffffff;
+}
+
+ul#clipes li#clipe03 {
+	background: url('_imagens/clipes/asaladosespelhos.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 320px 180px;
+	background-color: #ffffff;
+}
+
+ul#clipes li#clipe04 {
+	background: url('_imagens/clipes/ovampiro.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 320px 180px;
+	background-color: #ffffff;
+}
+
+ul#clipes li#clipe05 {
+	background: url('_imagens/clipes/trazerdevolta.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 320px 180px;
+	background-color: #ffffff;
+}
+
+ul#clipes li#clipe06 {
+	background: url('_imagens/clipes/naotenteseenganar.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 320px 180px;
+	background-color: #ffffff;
+}
+
+ul#clipes li#clipe07 {
+	background: url('_imagens/clipes/rua13demaio.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 320px 180px;
+	background-color: #ffffff;
+}
+
+ul#clipes li#clipe08 {
+	background: url('_imagens/clipes/nenhumamagoa.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 320px 180px;
+	background-color: #ffffff;
+}
+
+ul#clipes li#clipe09 {
+	background: url('_imagens/clipes/umdianavida.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 320px 180px;
+	background-color: #ffffff;
+}
+
+ul#clipes li#clipe10 {
+	background: url('_imagens/clipes/po.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 320px 180px;
+	background-color: #ffffff;
+}
+
+ul#clipes li#clipe11 {
+	background: url('_imagens/clipes/umaprincesainca.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 320px 180px;
+	background-color: #ffffff;
+}
+
+/* Janela Modal */
+
+	iframe{
+	width: 100%;
+	height: 100%;
+	max-height: 565px;
+	}
+		
+	.box{
+		position: fixed;
+		margin-top: -100px;
+		opacity:0;	
+		width: 100%;
+		height: 100%;
+		}
+		
+		a#close{
+		position: fixed;
+		opacity:0;	
+		}	
+			
+	#close{
+		color: #fff;
+		font-family: 'Arial';
+		text-decoration: none;
+		font-size: 100px;
+		position: fixed;
+		text-align: center;
+		right: 10px;
+		width: 50px;
+		height: 50px;
+			}
+			
+	#close:hover{
+		opacity: 0.6;
+		}
+
+	.jclipes:target{
+	opacity: 1;
+	display:block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.8);
+	position: fixed;
+	}
+	
+	#jclipe1:target ~ #box1{
+	top: 150px;
+	opacity: 1;
+	transition: all .3s;
+ 	transition-delay: .2s;
+	z-index: 100;
+	 }
+	
+	
+	#jclipe2:target ~ #box2{
+	top: 150px;
+	opacity: 1;
+	transition: all .3s;
+ 	transition-delay: .2s;
+	z-index: 100;
+	 }
+
+	#jclipe3:target ~ #box3{
+	top: 150px;
+	opacity: 1;
+	transition: all .3s;
+ 	transition-delay: .2s;
+	z-index: 100;
+	 }
+	 
+	#jclipe4:target ~ #box4{
+	top: 150px;
+	opacity: 1;
+	transition: all .3s;
+ 	transition-delay: .2s;
+	z-index: 100;
+	 }
+	 
+	 #jclipe5:target ~ #box5{
+	top: 150px;
+	opacity: 1;
+	transition: all .3s;
+ 	transition-delay: .2s;
+	z-index: 100;
+	 }
+	 
+	 #jclipe6:target ~ #box6{
+	top: 150px;
+	opacity: 1;
+	transition: all .3s;
+ 	transition-delay: .2s;
+	z-index: 100;
+	 }
+	 
+	 #jclipe7:target ~ #box7{
+	top: 150px;
+	opacity: 1;
+	transition: all .3s;
+ 	transition-delay: .2s;
+	z-index: 100;
+	 }
+	 
+	 #jclipe8:target ~ #box8{
+	top: 150px;
+	opacity: 1;
+	transition: all .3s;
+ 	transition-delay: .2s;
+	z-index: 100;
+	 }
+	 
+	 #jclipe9:target ~ #box9{
+	top: 150px;
+	opacity: 1;
+	transition: all .3s;
+ 	transition-delay: .2s;
+	z-index: 100;
+	 }
+	 
+	 #jclipe10:target ~ #box10{
+	top: 150px;
+	opacity: 1;
+	transition: all .3s;
+ 	transition-delay: .2s;
+	z-index: 100;
+	 }
+	 
+	 #jclipe11:target ~ #box11{
+	top: 150px;
+	opacity: 1;
+	transition: all .3s;
+ 	transition-delay: .2s;
+	z-index: 100;
+	 }
+	 
+	 
+	.jclipes:target ~ a#close{
+	top: 50px;
+	opacity: 1;
+	transition: all .3s;
+ 	transition-delay: .2s;
+	z-index: 100;
+	 }
