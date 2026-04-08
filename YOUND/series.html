@@ -1,0 +1,116 @@
+<!DOCTYPE html>   <!-- Informa que este é um documento html5 -->
+
+<html lang="pt-br"> <!-- Abre o documento e informa que a lingua usada é pt-br -->
+
+	<head> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139201866-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];				function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-139201866-1');
+		</script>
+		<meta charset="UTF-8">  <!-- Indica a codificação do texto, para que os caracteres sejam imprimidos corretamente. -->
+		<title>Yound</title> <!-- É o título que irá aparecer na aba/guia do site -->
+		<link rel="shortcut icon" href="favicon.png"> <!-- Define o favicon da página -->
+		<link rel="stylesheet" href="_css/style.css"> <!-- 'Chama' um outro documento, organizando o trabalho e economizando várias linhas de código -->
+		<link rel="stylesheet" href="_css/menu.css">
+		<link rel="stylesheet" href="_css/texto.css">
+	</head>
+	
+	<body>
+		<header>
+			<div w3-include-html="menu.html"></div>
+			<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      } 
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script>	
+		</header>
+		
+		<div class="corpo">
+			<h1>Séries</h1>
+			<h2> Ranking de Séries </h2>
+
+			
+			<div class="divbox3"> <h6>Épicas</h6> <ol> 
+			<li><a href="#" target="_blank" class=white>Game Of Thrones</a></li> 
+			<li><a href="#" target="_blank" class=gold>Vikings</a></li>
+			<li><a href="#" target="_blank" class=bege>Prison Break</a></li>
+			<li><a href="#" target="_blank" class=black>Gotham</a></li>
+			<li><a href="#" target="_blank" class=darkred>Daredevil</a></li>
+			<li><a href="#" target="_blank" class=red>Mr Robot</a></li>
+			<li><a href="#" target="_blank" class=gold>Sherlock</a></li>
+			<li><a href="#" target="_blank" class=orange>Elementary</a></li>
+			<li><a href="#" target="_blank" class=darkred>The Walking Dead</a></li>
+			<li><a href="#" target="_blank" class=white>Supernatural</a></li>
+			<li><a href="#" target="_blank" class=blue>Grimm</a></li>
+			<li><a href="#" target="_blank" class=green>Arrow</a></li>
+			<li><a href="#" target="_blank" class=orange>Lucifer</a></li>
+			</ol></div>
+			
+			<div class="divbox3"> <h6>Casuais</h6> <ol>
+			<li><a href="#" target="_blank" class=gold>How I Met Your Mother</a></li>			
+			<li><a href="#" target="_blank" class=darkred>Suits</a></li>
+			<li><a href="#" target="_blank" class=green>Merlí</a></li>
+			<li><a href="#" target="_blank" class=red>Love</a></li>
+			<li><a href="#" target="_blank" class=gold>Iron Fist</a></li>
+			<li><a href="#" target="_blank" class=white>American Horror Story</a></li>
+			<li><a href="#" target="_blank" class=white>13 Reasons Why</a></li>			
+			<li><a href="#" target="_blank" class=black>Black Mirror</a></li>
+			<li><a href="#" target="_blank" class=yellow>Flash</a></li>
+			<li><a href="#" target="_blank" class=grey>3%</a></li>
+			<li><a href="#" target="_blank" class=orange>Girlboss</a></li>
+			<li><a href="#" target="_blank" class=red>La Casa de Papel</a></li>
+			<li><a href="#" target="_blank" class=gold>The Good Place</a></li>
+			
+			</ol> </div>
+			
+			<div class="divbox3"> <h6>Lista de Espera p/ Assistir</h6><ol>
+			<li><a href="#" target="_blank">The End Of The F***ing World</a></li>
+			<li><a href="#" target="_blank" >Orange Is The New Black</a></li>
+			<li><a href="#" target="_blank">Um Maluco No Pedaço</a></li>
+			<li><a href="#" target="_blank">Girlboss</a></li>
+			<li><a href="#" target="_blank">Stranger Things</a></li>
+			<li><a href="#" target="_blank">Breaking Bad</a></li>
+			<li><a href="#" target="_blank">Doctor House</a></li>
+			<li><a href="#" target="_blank">Scorpion</a></li>
+			<li><a href="#" target="_blank">Doctor Who</a></li>
+			<li><a href="#" target="_blank">The Punisher</a></li>
+			<li><a href="#" target="_blank">Sense8</a></li>
+			<li><a href="#" target="_blank">The OA</a></li>	
+			<li><a href="#" target="_blank">The Innocents</a></li>
+			<li><a href="#" target="_blank">Californication</a></li>
+			<li><a href="#" target="_blank">Greys Anathomy/Friends</a></li>
+			<li><a href="#" target="_blank">Mad Men</a></li>
+			
+			</ol> </div> 
+			
+		</div>
+		<script>includeHTML();</script>
+	</body>
+
+</html>  <!-- Fecha o documento -->

@@ -1,0 +1,70 @@
+<!DOCTYPE html>   <!-- Informa que este é um documento html5 -->
+
+<html lang="pt-br"> <!-- Abre o documento e informa que a lingua usada é pt-br -->
+
+	<head>  
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139201866-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];				function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-139201866-1');
+		</script>
+		<meta charset="UTF-8">  <!-- Indica a codificação do texto, para que os caracteres sejam imprimidos corretamente. -->
+		<title>Yound</title> <!-- É o título que irá aparecer na aba/guia do site -->
+		<link rel="shortcut icon" href="favicon.png"> <!-- Define o favicon da página -->
+		<link rel="stylesheet" href="_css/style.css"> <!-- 'Chama' um outro documento, organizando o trabalho e economizando várias linhas de código -->
+		<link rel="stylesheet" href="_css/menu.css">
+		<link rel="stylesheet" href="_css/texto.css">
+	</head>
+	
+	<body>
+		<header>
+			<div w3-include-html="menu.html"></div>
+			<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      } 
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script>	
+		</header>
+		<div class="corpo">
+			<h1> Filosofia </h1>
+			<h2> A Maior Virtude do Homem </h2>
+			<div class=texto>
+				<p> A maior virtude do homem é a Sabedoria, que é a capacidade de tomar as melhores decisões mesmo com poucas informações e mesmo em más circunstâncias. 
+				Para alcançar essa virtude, é preciso primeiramente compreender a importância de três outras virtudes: <br> <br>
+				<ol> <li> A virtude do Equilíbrio</li>
+				<li> A virtude da Felicidade </li>
+				<li> A virtude da Racionalidade  </li>
+				</ol> <br>
+				</p>
+			</div>
+		</div>
+		<script>includeHTML();</script>
+	</body>
+
+</html>  <!-- Fecha o documento -->

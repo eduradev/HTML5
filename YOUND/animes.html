@@ -1,0 +1,121 @@
+<!DOCTYPE html>   <!-- Informa que este é um documento html5 -->
+
+<html lang="pt-br"> <!-- Abre o documento e informa que a lingua usada é pt-br -->
+
+	<head> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139201866-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];				function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-139201866-1');
+		</script>
+		<meta charset="UTF-8">  <!-- Indica a codificação do texto, para que os caracteres sejam imprimidos corretamente. -->
+		<title>Yound</title> <!-- É o título que irá aparecer na aba/guia do site -->
+		<link rel="shortcut icon" href="favicon.png"> <!-- Define o favicon da página -->
+		<link rel="stylesheet" href="_css/style.css"> <!-- 'Chama' um outro documento, organizando o trabalho e economizando várias linhas de código -->
+		<link rel="stylesheet" href="_css/menu.css">
+		<link rel="stylesheet" href="_css/texto.css">
+	</head>
+	
+	<body>
+		<header>
+			<div w3-include-html="menu.html"></div>
+			<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      } 
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script>	
+		</header>
+		
+		<div class="corpo">
+			<h1>Animes</h1>
+			<h4> Recomendações: <a class="link" target="_blank" href="#">Tokyo Ghoul</a>, <a class="link" target="_blank" href="#">Dororo</a>, <a class="link" target="_blank" href="#">Mob Psycho 100</a></h4>
+			<h2> Ranking de Animes </h2>
+			<div class="divbox3"> <h6>Animes Longos</h6> <ol> 
+			<li><a href="#" target="_blank" class=orange>Naruto</a></li> 
+			<li><a href="#" target="_blank" class="red">Fairy Tail</a></li> 
+			<li><a href="#" target="_blank" class="cyan">One Piece<a></li> 
+			<li><a href="#" target="_blank" class="grey">Bleach<a></li> 
+			<li><a href="#" target="_blank" class="yellow">Dragon Ball Z<a></li>
+			</ol> </div>
+			
+			<div class="divbox3"> <h6>Animes Médios</h6> <ol> 
+			<li><a href="#" target="_blank" class=grey>Fullmetal Alchemist</a></li> 
+			<li><a href="#" target="_blank" class=sea>Yu Yu Hakusho</a></li> 
+			<li><a href="#" target="_blank" class=yellow>Dragon Ball</a></li> 
+			<li><a href="#" target="_blank" class=green>Hunter x Hunter</a></li> 
+			<li><a href="#" target="_blank" class=orange>Avatar</a></li>
+			<li><a href="#" target="_blank" class=yellow>Pokémon</a></li> 			
+			</ol> </div>
+			
+			<div class="divbox3"> <h6>Animes Curtos</h6> <ol> 
+			<li><a href="#" target="_blank" class=black>Death Note</a></li> 
+			<li><a href="#" target="_blank" class=sea>Mob Psycho 100</a></li> 
+			<li><a href="#" target="_blank" class=red>Dororo</a></li> 
+			<li><a href="#" target="_blank" class=darkred>One Punch Man</a></li> 
+			<li><a href="#" target="_blank" class=white>Tokyo Ghoul</a></li>  
+			<li><a href="#" target="_blank" class=pink>Elfen Lied</a></li>
+			<li><a href="#" target="_blank" class=red>Akame Ga Kill</a></li>			
+			<li><a href="#" target="_blank" class=orange>Nanatsu no Taizai</a></li> 
+			<li><a href="#" target="_blank" class=cyan>Blue Exorcist</a></li> 
+			<li><a href="#" target="_blank" class=red>Another</a></li> 
+			<li><a href="#" target="_blank" class=yellow>Noragami</a></li> 			</ol>  </div> 
+			
+			<div class="divbox3"> <h6>Filmes</h6> <ol> 
+			<li><a href="#" target="_blank" class=white>Kimi no Na wa (Your Name)</a></li> 
+			<li><a href="#" target="_blank" class=darkred>Bakemono no Ko</a></li>
+			<li><a href="#" target="_blank" class=cyan>Ame To Yuki (Crianças Lobo)</a></li>
+			<li><a href="#" target="_blank" class=white>Studio Ghibli</a></li>
+			<li><a href="#" target="_blank" class=>Jardim das Palavras</a></li> 			
+			<li><a href="#" target="_blank" class=>Koe no Katachi</a></li> 
+			</ol> </div>
+			
+			
+			<div class="divbox3"> <h6>Limbo</h6> <ol> 
+			<li><a href="#" target="_blank" class=>Cavaleiros do Zodíaco</a></li> 
+			<li><a href="#" target="_blank" class=>Boku no Hero</a></li> 
+			<li><a href="#" target="_blank" class=>Shingeki no Kyojin</a></li> 
+			<li><a href="#" target="_blank" class=>Super Onze</a></li>
+			<li><a href="#" target="_blank" class=>Sword Art Online</a></li>
+			<li><a href="#" target="_blank" class=>Yu-Gi-Oh</a></li>	</ol> </div>
+			
+			<div class="divbox3"> <h6>Lista de Espera para Assistir</h6> <ol>
+			<li><a href="#" target="_blank" class=>Mushishi</a></li>
+			<li><a href="#" target="_blank" class=>Bungo Stray Dogs</a></li>
+			<li><a href="#" target="_blank" class=>Mahouka Koukou no Rettousei</a></li> 
+			<li><a href="#" target="_blank" class=>Ajin</a></li> 
+			<li><a href="#" target="_blank" class=>B: The Beggining</a></li> 
+			<li><a href="#" target="_blank" class=>Kujira no Kora  (Filhos das Baleias)</a></li> 
+			<li><a href="#" target="_blank" class=>Black Clover</a></li> 
+
+ </ol> </div>
+			<p> </p>
+		</div>
+		<script>includeHTML();</script>
+	</body>
+
+</html>  <!-- Fecha o documento -->

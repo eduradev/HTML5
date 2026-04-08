@@ -1,0 +1,29 @@
+			<h1>Animes</h1>
+			<div class="a1">
+				<h2>Tokyo Ghoul</h2>
+				<div class="video" align="center"><video width="848" height="480" controls> <source src="_videos/Unravel Tokyo Ghoul Opening.mp4" type="video/mp4"></video></div>
+				<p>Assiste esse anime me conta o que achou, são só 12 episódios. <br>
+				Mas recomendo que assista devagar, cada episódio é um soco no estômago haha
+				<br> <br> </p>
+				<p class="sinopse"> Sinopse: A história se passa num mundo habitado tanto por humanos quanto por Ghouls (uma espécie de super-humanos, alérgicos à comida e que só se alimentam de carne humana). O protagonista, Kaneki Ken, é um estudante comum, e só se fode ao longo da trama. Em certo momento, se vê no meio de uma Guerra entre humanos e ghouls e é obrigado a deixar de ser maricas e lutar nessa porra</p>
+				<br> <br> 
+				<p> Site para download: <a class="link" target="_blank" href="https://punchsubs.net/projeto/563/okyo-ghoul-blu-ray">https://punchsubs.net/projeto/563/tokyo-ghoul-blu-ray<a> </p>
+				<!--<p>*Obs: Disponibilizo apenas openings ou amvs ilustrativos no site, não os animes em si</p>-->
+				</div>
+			<div class="a2">
+				<h2> Dororo </h2>
+				<p> Simplesmente o melhor anime de 2019: </p>
+				<div class="video" align="center"><video width="854" height="480" controls> <source src="_videos/Dororo Opening.mp4" type="video/mp4"></video></div>
+				<p> Site para download: <a class="link" target="_blank" href="https://punchsubs.net/projeto/2810">https://punchsubs.net/projeto/2810</a> </p>
+			</div>			
+			<div class="a2">
+				<h2> Mob Psycho 100 </h2>
+				<p> Mesmo com poucos episódios, consegui me emocionar com todos esses 3 animes que apresentei até aqui </p>
+				<div align="center"><img class="radius" src="_imagens/mob_psycho.jpg" height="480" width="853"></div>
+				<p>Só assiste meu, vale muito a pena</p>
+			</div>
+			<div class="a2">
+				<h2> Noragami (Opening 1) </h2>
+				<p> Esse aqui é só pela abertura mesmo, não curti tanto o anime </p>
+				<div class="video" align="center"><video width="854" height="480" controls> <source src="_videos/Noragami Opening.mp4" type="video/mp4"></video></div>
+			</div>
